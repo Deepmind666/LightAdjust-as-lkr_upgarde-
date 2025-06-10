@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/idkey_pading" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/light_intensity_mart"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/idkey_text_layout_height"
+            android:background="@drawable/title_background"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/idkey_text_paddingLeft"
+            android:text="光照强度历史数据"
+            android:textColor="@color/idkey_title_text"
+            android:textSize="@dimen/idkey_text_textSize"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/hd_layout_margin"
+            android:layout_marginRight="@dimen/hd_layout_margin"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/air_temperature_humidity_margin_top"
+                android:layout_marginTop="@dimen/air_temperature_humidity_margin_top"
+                android:text="@string/air_temperature"
+                android:textSize="@dimen/history_data_label_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/air_temperature_search"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/idkey_text_layout_height"
+                    android:layout_weight="5"
+                    android:background="@drawable/view_border"
+                    android:text="@string/spinner_tip" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/idley_paddingbottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_button_off"
+                    android:padding="0dp"
+                    android:text="查询"
+                    android:textColor="@color/idkey_button_textcolor"
+                    android:textSize="@dimen/history_data_label_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/edit_div1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip" >
+
+            <LinearLayout
+                android:id="@+id/curveLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

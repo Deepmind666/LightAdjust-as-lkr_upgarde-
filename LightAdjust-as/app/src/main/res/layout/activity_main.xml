@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.com.zonesion.lightadjust.MainActivity" 
+    android:background="#ecf0f1"
+    android:orientation="horizontal">
+	
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.8"
+        android:orientation="vertical"
+        android:background="#34495E">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_app_name_text_height"
+            android:text="@string/app_name"
+            android:textSize="@dimen/main_app_name_text_size"
+            android:gravity="center"
+            android:background="#67AE37"
+            android:textColor="#FFF"/>
+        <RadioGroup
+            android:id="@+id/rg_bottom_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <cn.com.zonesion.lightadjust.view.CustomRadioButton          
+                android:id="@+id/btn_home_page"
+                style="@style/ToggleButtonStyle"
+                android:text="@string/run_home_page"
+                android:drawableStart="@drawable/homepage_radiobutton_selector" />
+
+            <cn.com.zonesion.lightadjust.view.CustomRadioButton          
+                android:id="@+id/btn_history"
+                style="@style/ToggleButtonStyle"
+                android:text="@string/the_historical_data"
+                android:drawableStart="@drawable/historica_radiobutton_selector"/>
+
+            <cn.com.zonesion.lightadjust.view.CustomRadioButton          
+                android:id="@+id/btn_more"
+                style="@style/ToggleButtonStyle"
+                android:text="@string/more_information"
+                android:drawableStart="@drawable/more_radiobutton_selector" />
+        </RadioGroup>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/load_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"/>
+</LinearLayout>

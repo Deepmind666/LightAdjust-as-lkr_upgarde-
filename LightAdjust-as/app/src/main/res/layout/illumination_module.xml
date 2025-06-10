@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_intensity_mart">>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_background"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp">
+        <TextView
+            android:id="@+id/text_illumination_module_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/timer_module_margin_start"
+            android:text="@string/text_illumination_module"
+            android:textSize="@dimen/timer_module_text_size"
+            android:textColor="@color/idkey_title_text"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/text_illumination_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/illumination_module_state"
+            android:textSize="@dimen/led_lamp_text_size"
+            android:layout_alignTop="@id/text_illumination_module_name"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/checked_item_state_offline_color"
+            android:layout_marginEnd="@dimen/led_lamp_state_margin_end" />
+    </RelativeLayout>
+    <cn.com.zonesion.lightadjust.view.DialChartIlluminationView
+           android:id="@+id/illumination_circle_view"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_alignParentBottom="true"
+           android:layout_below="@id/relativelayout"/>
+</RelativeLayout>

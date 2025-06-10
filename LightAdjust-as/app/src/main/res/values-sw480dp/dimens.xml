@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    	<dimen name="navigation_bar_text_size">18sp</dimen>
+    <dimen name="navigation_bar_drawable_padding">20dp</dimen>
+    <dimen name="led_lamp_margin_start">10dp</dimen>
+    <dimen name="led_lamp_text_size">20sp</dimen>
+    <dimen name="led_lamp_state_margin_end">10dp</dimen>
+    <dimen name="module_switch_name_margin_start">10dp</dimen>
+    <dimen name="module_switch_text_size">20sp</dimen>
+    <dimen name="module_switch_choose_text_size">12sp</dimen>
+    <dimen name="security_module_tip_margin_bottom">25dp</dimen>
+    <dimen name="security_module_tip_text_size">15sp</dimen>
+    <dimen name="radio_button_module_switch_stroke">1dp</dimen>
+    <dimen name="timer_module_margin_start">10dp</dimen>
+    <dimen name="timer_module_text_size">20sp</dimen>
+    <dimen name="timer_led_lamp_margin_top">40dp</dimen>
+    <dimen name="timer_led_lamp_text_size">20sp</dimen>
+    <dimen name="rgb_module__name_margin_start">10dp</dimen>
+    <dimen name="rgb_module_text_size">20sp</dimen>
+    <dimen name="rgb_lamp_state_margin_end">10dp</dimen>
+    <dimen name="image_rgb_width">150dp</dimen>
+    <dimen name="image_rgb_height">150dp</dimen>
+    <dimen name="led_module_switch_margin_bottom">15dp</dimen>
+    <dimen name="led_open_label_margin_end">5dp</dimen>
+    <dimen name="led_label_text_size">20sp</dimen>
+    <dimen name="led_open_close_text_size">30sp</dimen>
+    <dimen name="led_close_label_margin_end">5dp</dimen>
+    <dimen name="led_close_label_margin_start">20dp</dimen>
+    <dimen name="linear_margin_top">65dp</dimen>
+    <dimen name="air_temperature_humidity_margin_top">5dp</dimen>
+    <dimen name="history_data_label_text_size">18sp</dimen>
+    <dimen name="history_data_tip_margin">5dp</dimen>
+    <dimen name="air_temperature_tip_text_size">12sp</dimen>
+    <dimen name="security_module_margin_end" type="dimen" format="float">2.5dp</dimen>
+    <dimen name="leave_home_module" type="dimen" format="float">2.5dp</dimen>
+    <dimen name="text_size_label">25sp</dimen>
+    <dimen name="text_size_edit">18sp</dimen>
+    <dimen name="mac_btn_margin_start">45dp</dimen>
+    <dimen name="idkey_button_text_size">18sp</dimen>
+    <dimen name="version_text_size">18sp</dimen>
+    <dimen name="version_num_margin_top">5dp</dimen>
+    <dimen name="version_btn_up_width">200dp</dimen>
+    <dimen name="btn_up_version_margin_top">10dp</dimen>
+    <dimen name="version_up_btn_logcat">200dp</dimen>
+    <dimen name="version_up_listview">80dp</dimen>
+    <dimen name="text_tip_margin_top_qrcode">10dp</dimen>
+    <dimen name="qrcode_download_apk_text_size">25sp</dimen>
+    <dimen name="image_rgb_width_height">20dp</dimen>
+    <dimen name="rgb_color_choose_margin_start">15dp</dimen>
+    <dimen name="border_width_size" type="dimen" format="float">0.5dp</dimen>
+    <dimen name="rgb_choose_linear_margin_bottom">15dp</dimen>
+    <dimen name="led_image_size">80dp</dimen>
+    <dimen name="share_only_text_margin_top">10dp</dimen>
+    
+    <dimen name="open_lamp_width">70dp</dimen>
+    <dimen name="open_lamp_height">25dp</dimen>
+    
+     <dimen name="mode_top">5dp</dimen>
+     <dimen name="module_pad">5dp</dimen>
+</resources>

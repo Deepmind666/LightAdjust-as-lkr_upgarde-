@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 	<string name="action_settings">Settings</string>
+   	<string name="app_name">农业光照调节系统</string>
+    <string name="run_home_page">运营首页</string>
+    <string name="the_historical_data">历史数据</string>
+    <string name="more_information">更多信息</string>
+    <string name="sunshade">遮阳帘</string>
+    <string name="sunshade_module_state">离线</string>
+    <string name="temperature_text">0℃</string>
+    <string name="humidity_text">0%</string>
+    <string name="lamp_on">开启</string>
+    <string name="light">补光灯</string>
+    <string name="light_module_state">离线</string>
+    <string name="text_illumination_module">光照强度</string>
+    <string name="illumination_module_state">离线</string>
+    <string name="threshold">光照阈值设置</string>
+    <string name="current_item_state">这是当前检测项的状态图片</string>
+    <string name="threshold_setting_max">设置光照上下限：低于较小值开灯关帘，高于较大值关灯开帘。</string>
+    <string name="automatic_module">自动模式</string>
+    <string name="manual_module">手动模式</string>
+    <string name="security_module_tip">自动模式：设置光照强度阀值开关遮阳帘或补光灯。</string>
+    <string name="manual_module_tip">手动模式：通过界面开关遮阳帘、补光灯。</string>
+    <string name="thresdhold_min">0</string>
+    <string name="mode_switching">模式切换</string>
+    <string name="air_temperature">光照强度(Lx)</string>
+    <string name="spinner_tip">请选择您要查询的时间段：</string>
+    <string name="air_temperature_tip">光照强度历史数据(注意:如果数据量太大，双指向外不停地滑动可以更清晰地查看数据)</string>
+    <string name="air_humidity">空气湿度（%）</string>
+    <string name="id">ID</string>
+    <string name="default_id">1234567890</string>
+    <string name="key">KEY</string>
+    <string name="default_key">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="server">SERVER</string>
+    <string name="default_server">api.zhiyun360.com</string>
+    <string name="connection">连接</string>
+    <string name="scanner">扫描</string>
+    <string name="share">分享</string>
+    <string name="keep">保存</string>
+    <string name="sensor_a">Sensor-A</string>
+    <string name="sensor_b">Sensor-B</string>
+    <string name="sensor_c">Sensor-C</string>
+    <string name="default_sensor_a">00:00:00:00:00:00:00:00</string>
+    <string name="default_sensor_b">00:00:00:00:00:00:00:00</string>
+    <string name="default_sensor_c">00:00:00:00:00:00:00:00</string>
+    <string name="current_version">当前版本：v1.0.180206</string>
+    <string name="version_up">版本升级</string>
+    <string name="look_up_logcat">查看升级日志</string>
+    <string name="delete_local_logcat">清除本地日志</string>
+    <string name="scanner_qrcode_download_app">扫描该二维码下载APP</string>
+    <string name="scanner_download_app">扫描下载APP</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="desc_qrcode">这是一张二维码图片</string>
+    <string name="only_share">注：仅限于分享ID、KEY和MAC地址</string>
+   
+
+</resources>

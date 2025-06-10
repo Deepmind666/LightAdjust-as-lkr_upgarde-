@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	   	<string-array name="airTemperatureSearch">
+	        <item>请选择您要查询的时间段:</item>
+	        <item>最近1小时</item>
+	        <item>最近6小时</item>
+	        <item>最近12小时</item>
+	        <item>最近1天</item>
+	        <item>最近1周</item>
+	        <item>最近2周</item>
+	        <item>最近1月</item>
+	        <item>最近3月</item>
+	        <item>最近半年</item>
+	        <item>最近1年</item>
+	    </string-array> 
+</resources>

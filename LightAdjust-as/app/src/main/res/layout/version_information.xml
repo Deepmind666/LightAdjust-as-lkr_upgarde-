@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/idkey_pading">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/light_intensity_mart">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/idkey_text_layout_height"
+            android:paddingLeft="@dimen/idkey_text_paddingLeft"
+            android:gravity="center_vertical"
+            android:text="IDKey"
+            android:background="@drawable/title_background"
+            android:textColor="@color/idkey_title_text"
+            android:textSize="@dimen/idkey_text_textSize"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_current_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/version_num_margin_top"
+                    android:text="@string/current_version"
+                    android:textSize="@dimen/version_text_size"
+                    android:gravity="center"
+                    android:textColor="@color/current_version_text_color"/>
+
+                <Button
+                    android:id="@+id/btn_version_up"
+                    android:layout_width="@dimen/version_btn_up_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/version_up"
+                    android:textSize="@dimen/version_text_size"
+                    android:layout_marginTop="@dimen/btn_up_version_margin_top"
+                    android:background="@drawable/version_upgrades_button"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/btn_version_logcat"
+                    android:layout_width="@dimen/version_up_btn_logcat"
+                    android:layout_height="wrap_content"
+                    android:text="@string/look_up_logcat"
+                    android:textSize="@dimen/version_text_size"
+                    android:layout_marginTop="@dimen/btn_up_version_margin_top"
+                    android:background="@drawable/update_log_button"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/delete_version_logcat"
+                    android:layout_width="@dimen/version_up_btn_logcat"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delete_local_logcat"
+                    android:textSize="@dimen/version_text_size"
+                    android:layout_marginTop="@dimen/btn_up_version_margin_top"
+                    android:background="@drawable/update_log_button"
+                    android:textColor="@android:color/white"/>
+
+                <ListView
+                    android:id="@+id/list_logcat"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/version_up_listview"
+                    android:visibility="invisible"
+                    android:layout_marginTop="@dimen/btn_up_version_margin_top"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/qr_download_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/scanner_qrcode_download_app" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scanner_download_app"
+                    android:layout_marginTop="@dimen/text_tip_margin_top_qrcode"
+                    android:textSize="@dimen/qrcode_download_apk_text_size"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

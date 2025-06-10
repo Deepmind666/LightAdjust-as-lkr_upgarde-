@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="cn.com.zonesion.lightadjust.activity.TimePickerActivity">
+	
+    <!-- 
+    	<TimePicker
+        android:id="@+id/led_timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:timePickerMode="spinner" />
+     -->
+    <TimePicker
+        android:id="@+id/led_timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/led_timePicker"
+        android:layout_below="@id/led_timePicker"
+        android:layout_alignStart="@id/led_timePicker">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:textColor="#31b0d5"
+        android:onClick="sureClickEvent"
+        android:text="确定" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:textColor="#31b0d5"
+        android:onClick="cancelClickEvent"
+        android:text="取消" />
+
+    </LinearLayout>
+</RelativeLayout>

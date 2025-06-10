@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    android:padding="@dimen/idkey_pading"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/light_intensity_mart">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/idkey_text_layout_height"
+            android:paddingLeft="@dimen/idkey_text_paddingLeft"
+            android:gravity="center_vertical"
+            android:text="IDKey"
+            android:background="@drawable/title_background"
+            android:textColor="@color/idkey_title_text"
+            android:textSize="@dimen/idkey_text_textSize"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:id="@+id/linear_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:layout_marginTop="@dimen/idkey_layout_marginTop"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/id"
+                android:textSize="@dimen/text_size_label"
+                android:textColor="@color/id_key_server_text_color"
+                android:gravity="end"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"/>
+            <EditText
+                android:id="@+id/id_edit"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="@dimen/mac_btn_margin_start"
+                android:inputType="text"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_size_edit"
+                android:text="@string/default_id"
+                android:textColor="@color/idkey_editText_textcolor"
+                android:background="@drawable/edittext_background"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:layout_marginTop="@dimen/idkey_layout_marginTop"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/key"
+                android:textSize="@dimen/text_size_label"
+                android:textColor="@color/id_key_server_text_color"
+                android:gravity="end"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"/>
+
+            <EditText
+                android:id="@+id/key_edit"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="@dimen/mac_btn_margin_start"
+                android:inputType="text"
+                android:textSize="@dimen/text_size_edit"
+                android:gravity="center_vertical"
+                android:text="@string/default_key"
+                android:textColor="@color/idkey_editText_textcolor"
+                android:background="@drawable/edittext_background"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_server"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:textColor="@color/idkey_editText_textcolor"
+            android:layout_marginTop="@dimen/idkey_layout_marginTop"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/mac_btn_margin_start"
+                android:text="@string/server"
+                android:textSize="@dimen/text_size_label"
+                android:textColor="@color/id_key_server_text_color"
+                android:gravity="end"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"/>
+
+            <EditText
+                android:id="@+id/server_edit"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="@dimen/mac_btn_margin_start"
+                android:inputType="text"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_size_edit"
+                android:text="@string/default_server"
+                android:textColor="@color/idkey_editText_textcolor"
+                android:background="@drawable/edittext_background"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="6"
+            android:gravity="center"
+            android:paddingTop="@dimen/idley_paddingtop"
+            android:paddingBottom="@dimen/idley_paddingbottom"
+            >
+            <Button
+                android:id="@+id/btn_connection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/connection"
+                android:textSize="@dimen/idkey_button_text_size"
+                android:textColor="@color/idkey_button_textcolor"
+                android:background="@drawable/corner_button_off"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"/>
+            <Button
+                android:id="@+id/btn_scanner_key"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/scanner"
+                android:textSize="@dimen/idkey_button_text_size"
+                android:textColor="@color/idkey_button_textcolor"
+                android:background="@drawable/scanning_button_selector"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"/>
+
+            <Button
+                android:id="@+id/btn_share_key"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/idkey_button_text_size"
+                android:textColor="@color/idkey_button_textcolor"
+                android:background="@drawable/share_button_selector"
+                android:text="@string/share" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

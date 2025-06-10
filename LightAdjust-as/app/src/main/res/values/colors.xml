@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	    <color name="colorPrimary">#3F51B5</color>
+	    <color name="colorPrimaryDark">#303F9F</color>
+	    <color name="colorAccent">#FF4081</color>
+	    <color name="radio_button_module_switch_stroke_color">#66000000</color>
+	    <color name="checked_item_state_offline_color">#DD0000</color>
+	    <color name="module_switch_background">#efefef</color>
+	    <color name="id_key_server_text_color">#999999</color>
+	    <color name="btn_home_pager_background">#1E2B38</color>
+	    <color name="current_version_text_color">#DD0000</color>
+	    <color name="rgb_red_color">#FF0000</color>
+	    <color name="rgb_green_color">#008000</color>
+	    <color name="rgb_blue_color">#0000FF</color>
+	    <color name="rgb_white_color">#FFFFFF</color>
+	    <color name="line_text_color">#4EE984</color>
+	
+	    <color name="viewfinder_mask">#60000000</color>
+	    <color name="result_view">#b0000000</color>
+	    <color name="possible_result_points">#c0ffff00</color>
+	
+	    <color name="color_text_normal">#FFFFFF</color>
+	    <color name="color_text_selected">#515151</color>
+	    <color name="color_bg_normal">#34495E</color>
+	    <color name="btn_connection_background">#DD0000</color>
+	    <color name="idkey_title_text">#333333</color>
+	    <color name="idkey_editText_textcolor">#555555</color>
+	    <color name="idkey_button_textcolor">#fff</color>
+	    
+	    <color name="background_tab_pressed">#6633B5E5</color>
+	   
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_intensity_mart">>
+    <RelativeLayout
+        android:id="@+id/checked_item_threshold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_background"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp">
+        <TextView
+            android:id="@+id/text_threshold_module_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/rgb_module__name_margin_start"
+            android:text="@string/threshold"
+            android:textSize="@dimen/rgb_module_text_size"
+            android:textColor="@color/idkey_title_text"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+    <SeekBar
+        android:id="@+id/seek_bar_threshold"
+        android:layout_width="@dimen/seekbar_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checked_item_threshold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/seek_bar_margin_top"
+        android:contentDescription="@string/current_item_state"
+        android:max="5000"
+        style="@android:style/Widget.SeekBar"/>
+
+
+    <TextView
+        android:id="@+id/text_threshold_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seek_bar_threshold"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="@dimen/threshold_text_margin_top"
+        android:textSize="@dimen/threshold_tip_text_size"
+        android:text="@string/threshold_setting_max" />
+
+    <TextView
+        android:id="@+id/text_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checked_item_threshold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/text_margin_top"
+        android:text="@string/thresdhold_min" />
+</RelativeLayout>

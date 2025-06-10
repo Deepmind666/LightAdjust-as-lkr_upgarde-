@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_intensity_mart">>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_background"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp">
+        <TextView
+            android:id="@+id/text_module_humidity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/module_switch_name_margin_start"
+            android:text="@string/mode_switching"
+            android:textSize="@dimen/module_switch_text_size"
+            android:textColor="@color/idkey_title_text"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+     <RadioGroup
+        android:id="@+id/module_switch_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <RadioButton
+            android:id="@+id/security_module"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/automatic_module"
+            android:textSize="@dimen/module_switch_choose_text_size"
+            android:button="@null"
+            android:padding="5dp"
+            android:drawableStart="@drawable/module_selector"
+            android:background="@drawable/mode_background"
+            android:textColor="@color/radiobutton_textcolor"/>
+        
+        <RadioButton
+            android:id="@+id/manual_module"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/manual_module"
+            android:textSize="@dimen/module_switch_choose_text_size"
+            android:layout_marginTop="@dimen/mode_top"
+            android:button="@null"
+            android:padding="@dimen/module_pad"
+            android:drawableStart="@drawable/module_selector"
+            android:background="@drawable/mode_background"
+            android:textColor="@color/radiobutton_textcolor"/>
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/security_module_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/security_module_tip"
+        android:maxLines="2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="@dimen/threshold_tip_text_size"
+        android:layout_marginBottom="@dimen/security_module_tip_margin_bottom"/>
+
+    <TextView
+        android:id="@+id/manual_module_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/manual_module_tip"
+         android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="@dimen/threshold_tip_text_size"
+        android:maxLines="2"
+        android:layout_marginBottom="@dimen/security_module_tip_margin_bottom"
+        android:visibility="gone"/>
+    
+</RelativeLayout>
