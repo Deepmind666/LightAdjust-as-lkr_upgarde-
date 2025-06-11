@@ -3,5 +3,6 @@
 这个是指导书第四章智慧农业的第二节：农业光照调节系统的APP
 用Android Studio 打开 LightAdjust-as 文件，sync一下，就好
 Gradle 版本: 8.11.1
+Android 版本：15
 Java 版本: 17
 Android Gradle 插件版本: 8.9.0
